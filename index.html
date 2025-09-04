@@ -491,7 +491,7 @@
             
             try {
                 // Send message to Telegram
-                const message = `<b>🛒 MLBB Diamond Order ရှိပါတယ်!</b>\n\n<b>Package: ${selectedPackage}</b>\n<b>Price: ${selectedPrice.toLocaleString()} Ks</b>\n<b>Game ID:</b> <code>${gameId}</code>\n<b>Server ID:</b> ${serverId}\n\nOrder Time: ${new Date().toLocaleString()}`;
+                const message = `<b>🛒 MLBB Diamond Order ရှိပါတယ်!</b>\n\n<b>Package: ${selectedPackage}</b>\n<b>Price: ${selectedPrice.toLocaleString()} Ks</b>\n<b>Game ID:</b> <code>${gameId}</code>\n<b>Server ID:</b> <code>${serverId}</code>\n\n<b>Order Time: ${new Date().toLocaleString()}</b>`;
                 
                 const response = await fetch(`https://api.telegram.org/bot${telegramBotToken}/sendMessage`, {
                     method: 'POST',
